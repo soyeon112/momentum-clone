@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+}
+/* 공통 */
+.fs40_fw600 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* 이름 입력창 - 초기화면 */
+header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+header img {
+  width: 80px;
+  height: 80px;
+}
+.mainCenter {
+  height: 400px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 중간 섹션 - 이름 입력창 */
+.mainCenter .inputName.none {
+  display: none;
+}
+.mainCenter .inputName {
+  display: block;
+  width: 900px;
+  height: 150px;
+  text-align: center;
+}
+.mainCenter .inputName #name_infoText {
+  color: #fff;
+}
+.mainCenter .inputName .name_inputBox {
+  text-align: center;
+  margin-top: 30px;
+  width: auto;
+  font-size: 40px;
+  font-weight: 600;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 3px #fff;
+  color: #fff;
+}
+.mainCenter .inputName .name_inputBox:focus {
+  outline: none;
+}
+
+/* 중간 섹션 - 시계 */
+.mainCenter .clock_intro {
+  /* width: 600px; */
+  text-align: center;
+  display: none;
+}
+.mainCenter .clock_intro.active {
+  display: block;
+}
+.mainCenter .clock_intro #clock {
+  font-size: 150px;
+  font-weight: 600;
+  color: #fff;
+}
+.mainCenter .clock_intro .introText {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 50px;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  line-height: 40px;
+  color: #fff;
+}
+
+.mainCenter .clock_intro .introText #timeText {
+  margin-right: 10px;
+  /* background-color: antiquewhite; */
+}
+.mainCenter .clock_intro .introText #nameText {
+  /* color: #0335b3; */
+}
+/* 반응형 - 시계 */
+@media (max-width: 500px) {
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  .mainCenter .clock_intro {
+    width: 330px;
+  }
+  .mainCenter .clock_intro #clock {
+    font-size: 110px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .mainCenter .clock_intro .introText {
+    flex-direction: column;
+    height: 110px;
+  }
+  .mainCenter .clock_intro .introText #timeText {
+    font-size: 35px;
+    margin-right: 0px;
+  }
+  .mainCenter .clock_intro .introText #nameText {
+    margin-top: -10px;
+    font-size: 35px;
+    border-bottom: 3px solid #fff;
+  }
+}
