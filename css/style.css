@@ -127,7 +127,7 @@ header #weather span:last-child {
   line-height: 40px;
   color: #fff;
 }
-.mainCenter .clock_intro .introText #timeText {
+.mainCenter .clock_intro .introText span #timeText {
   margin-right: 10px;
 }
 .mainCenter .clock_intro .introText .nameBtnMenu {
@@ -236,12 +236,16 @@ header #weather span:last-child {
   .mainCenter .clock_intro .introText {
     flex-direction: column;
   }
-  .mainCenter .clock_intro .introText #timeText {
+  .mainCenter .clock_intro .introText span {
+    /* background-color: pink; */
+    margin-top: 50px;
+  }
+  .mainCenter .clock_intro .introText span #timeText {
     font-size: 20px;
     margin-right: 0px;
   }
-  .mainCenter .clock_intro .introText #nameText {
-    margin-top: -10px;
+  .mainCenter .clock_intro .introText span #nameText {
+    /* margin-top: -10px; */
     font-size: 20px;
     border-bottom: 3px solid #fff;
   }

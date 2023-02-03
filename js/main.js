@@ -16,6 +16,14 @@ const nameBtnMenu = document.querySelector(".nameBtnMenu");
 const nameModiBtn = document.querySelector("#nameModiBtn");
 const nameDelBtn = document.querySelector("#nameDelBtn");
 
+const USERNAME_KEY = "userName";
+function deleteName() {
+  localStorage.removeItem(USERNAME_KEY);
+  isName();
+}
+
+nameDelBtn.addEventListener("click", deleteName);
+
 //메뉴show hidden
 function menuShow() {
   console.log("포커스?");
@@ -28,7 +36,6 @@ function menuHidden() {
 function handleMouseMove(event) {
   let offsetX = event.offsetX;
   let offsetY = event.offsetY;
-  console.log(offsetX, offsetY);
 
   if (280 <= offsetX && offsetX < 600 && 0 <= offsetY && offsetY < 40) {
     menuShow();
@@ -52,15 +59,16 @@ inputNameForm.addEventListener("submit", submitName);
 // 로컬스토리지에 유저네임 있는지 확인.
 // 있으면 시계화면, 없으면 입력창으로 보여짐.
 function isName() {
-  const userNameKey = localStorage.getItem("userName");
-
-  if (userNameKey) {
+  const userNameKey = localStorage.getItem(USERNAME_KEY);
+  console.log("local", userNameKey);
+  if (userNameKey !== null) {
     inputNameForm.classList.add("none");
     userTrue.classList.add("active");
     nameText.innerText = userNameKey;
   } else {
     inputNameForm.classList.remove("none");
-    mainFocus.classList.remove("active");
+    // mainFocus.classList.remove("active");
+    userTrue.classList.remove("active");
   }
 }
 isName();
