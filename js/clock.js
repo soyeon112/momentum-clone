@@ -1,5 +1,7 @@
 /* 시간과 관련된 함수가 있는 js파일입니다.
 ✅현재시간, 시간대별 텍스트
+✅현재 시간, 분, 초를 불러와 화면에 출력시켜줍니다.
+✅1분에 한번씩 setInterval()함수를 호출되며 화면에서 시간이 변경됩니다.
 */
 
 const clock = document.querySelector("#clock");
@@ -27,7 +29,6 @@ setInterval(getTime, 60000); //1분에 1번씩 호출되게
 
 //시간별 문구 출력
 function setTimeText(hours) {
-  console.log(hours);
   if (6 <= hours && hours < 12) {
     timeText.innerText = timeTexts["morning"];
   } else if (12 <= hours && hours < 18) {

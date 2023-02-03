@@ -12,28 +12,54 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media500.css" />
+    <script defer src="./js/background.js"></script>
     <script defer src="./js/main.js"></script>
     <script defer src="./js/clock.js"></script>
-    <script defer src="./js/background.js"></script>
+    <script defer src="./js/todayFocus.js"></script>
+    <script defer src="./js/quotes.js"></script>
+    <script defer src="./js/todo.js"></script>
   </head>
   <body>
     <header>
-      <!-- <img src="./img/logo.png" alt="logo" /> -->
-      <img src="./img/apple-icon.png" alt="logo" />
+      <div id="quotesContents">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="weather">
+        <span>weatherㅇㅇ</span>
+        <span>온도</span>
+      </div>
     </header>
     <section class="mainCenter">
-      <div class="inputName">
+      <form id="inputName">
         <h2 id="name_infoText" class="fs40_fw600">Hello, What's your name-?</h2>
-        <input type="text" class="name_inputBox" />
-      </div>
-      <div class="clock_intro">
-        <h1 id="clock"></h1>
-        <div class="introText">
-          <span>
-            <span id="timeText" class="fs40_fw600">timeText</span>
-            <span id="nameText" class="fs40_fw600">name</span>
-          </span>
+        <input type="text" id="name_inputBox" class="inputBox" required />
+      </form>
+      <div id="userTrue">
+        <div class="clock_intro">
+          <span class="clockIcon">⏰</span>
+          <h1 id="clock"></h1>
+          <div class="introText">
+            <span>
+              <span id="timeText" class="fs40_fw600">timeText</span>
+              <span id="nameText" class="fs40_fw600">name</span>
+            </span>
+          </div>
+        </div>
+        <div id="fouseContents">
+          <form class="focusForm">
+            <span id="focusText" class="fs40_fw600"
+              >what is your main focus for today?</span
+            >
+            <input type="text" id="todayFocus" class="inputBox" required />
+          </form>
+          <div class="focusList">
+            <span>TODAY</span>
+            <ul>
+              <!-- <input type="checkbox" id="focusCheckBox" /> -->
+              <!-- <span>오늘의중요한일은 이거</span> -->
+            </ul>
+          </div>
         </div>
       </div>
     </section>
