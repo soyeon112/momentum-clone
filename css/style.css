@@ -130,18 +130,12 @@ header #weather span:last-child {
 .mainCenter .clock_intro .introText #timeText {
   margin-right: 10px;
 }
-.mainCenter .clock_intro .introText #nameText {
-  /* color: #0335b3; */
-}
-/* --오늘제일 중요한일 today focus-- */
 
+/* --오늘제일 중요한일 today focus-- */
 .mainCenter #fouseContents {
   position: relative;
   height: 150px;
 }
-/* .mainCenter .focusForm {
-  display: none;
-} */
 .mainCenter .focusForm {
   /* display: block; */
 
@@ -211,11 +205,6 @@ header #weather span:last-child {
   .mainCenter #inputName .name_inputBox {
     width: 90%;
   }
-  /* 이름입력후 시계 반응형 */
-  .mainCenter .clock_intro {
-    /* width: 330px; */
-    /* width: 90%; */
-  }
   .mainCenter .clock_intro #clock {
     font-size: 80px;
     font-weight: 600;
@@ -238,7 +227,7 @@ header #weather span:last-child {
   }
   .mainCenter .focusForm #focusText {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
   }
   .mainCenter .focusForm .inputBox {
     font-size: 20px;
@@ -255,9 +244,6 @@ header #weather span:last-child {
     color: #fff;
     font-weight: 300;
     padding: 2px 0;
-  }
-  .mainCenter #fouseContents .focusList.active {
-    /* height: 50px; */
   }
   .mainCenter #fouseContents .focusList span {
     color: #fff;

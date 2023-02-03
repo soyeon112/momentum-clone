@@ -1,5 +1,5 @@
-/*todayFoucs관리 js파일입니다.
-
+/* todayFoucs관리 js파일입니다.
+✅오늘 가장 중요한일을 적어놓을 수 있습니다. (생성과 삭제만 가능)
 */
 const focusForm = document.querySelector(".focusForm");
 const inputTodayFocus = focusForm.querySelector("#todayFocus");
