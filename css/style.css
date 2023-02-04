@@ -341,7 +341,7 @@ header #weather #iconTemp span:last-child {
 
 /* 반응형*/
 @media (max-width: 500px) {
-  /* 이름입력창 반응형 */
+  /*✅ 초기화면 - 이름입력*/
   .mainCenter #inputName {
     width: 90%;
     height: 150px;
@@ -350,6 +350,7 @@ header #weather #iconTemp span:last-child {
   .mainCenter #inputName .name_inputBox {
     width: 90%;
   }
+  /*✅ 시계 */
   .mainCenter .clock_intro #clock {
     font-size: 80px;
     font-weight: 600;
@@ -357,9 +358,9 @@ header #weather #iconTemp span:last-child {
   }
   .mainCenter .clock_intro .introText {
     flex-direction: column;
+    margin-top: 10px;
   }
   .mainCenter .clock_intro .introText span {
-    /* background-color: pink; */
     margin-top: 20px;
   }
   .mainCenter .clock_intro .introText span #timeText {
@@ -367,10 +368,14 @@ header #weather #iconTemp span:last-child {
     margin-right: 0px;
   }
   .mainCenter .clock_intro .introText span #nameText {
-    /* margin-top: -10px; */
     font-size: 20px;
     border-bottom: 3px solid #fff;
   }
+  .clockIcon {
+    font-size: 25px;
+  }
+
+  /*✅ Today Focus*/
   .mainCenter .focusForm {
     margin-top: 10px;
   }
@@ -383,11 +388,23 @@ header #weather #iconTemp span:last-child {
     font-weight: 400;
     width: 90%;
   }
+  .mainCenter #fouseContents .focusList span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 0;
+  }
+  .mainCenter #fouseContents .focusList span:last-child {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  /*✅ 명언, 날씨*/
   header #quotesContents,
   header #weather {
     margin-top: 0px;
   }
-  header #quotesContents span,
+  header #quotesContents span:last-child,
   header #weather #weatherCity {
     font-size: 11px;
     color: #fff;
@@ -402,15 +419,5 @@ header #weather #iconTemp span:last-child {
   header #weather #iconTemp span:last-child {
     font-size: 15px;
     font-weight: 600;
-  }
-  .mainCenter #fouseContents .focusList span {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 7px 0;
-  }
-  .mainCenter #fouseContents .focusList span:last-child {
-    font-size: 15px;
-    font-weight: 400;
   }
 }
