@@ -17,8 +17,16 @@
 
 ---
 
-## ![image](https://user-images.githubusercontent.com/29302463/216760016-b868a449-602f-440a-9436-caf48b14c371.png)
+#### 🔎 웹
 
-## ![image](https://user-images.githubusercontent.com/29302463/216760083-a16fb4df-cddf-473b-84b0-5e8f770d17a2.png)
+![image](https://user-images.githubusercontent.com/29302463/216760016-b868a449-602f-440a-9436-caf48b14c371.png)
+
+![image](https://user-images.githubusercontent.com/29302463/216760083-a16fb4df-cddf-473b-84b0-5e8f770d17a2.png)
 
 ![image](https://user-images.githubusercontent.com/29302463/216760286-e6df6e4c-6a72-4422-b31c-f7a7cd58be4f.png)
+
+---
+
+#### 🔎 모바일
+
+![mo_123](https://user-images.githubusercontent.com/29302463/216768240-066c9491-5c5f-44d3-959e-3c275703471f.png)
