@@ -42,6 +42,7 @@ function menuHidden() {
   nameBtnMenu.classList.remove("focus");
 }
 //이름 위에 올리면 메뉴 show
+
 function handleMouseMove(event) {
   let offsetX = event.offsetX;
   let offsetY = event.offsetY;

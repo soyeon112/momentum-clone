@@ -74,7 +74,3 @@ function deleteTodo(event) {
   //배열에서 버튼 클릭한 요소를 제외하고 보여줌.
   savedTodo();
 }
-
-function deleFilter(todo) {
-  return todo.id !== "1675489605800";
-}
