@@ -1,5 +1,5 @@
 /* TO DO LIST 관련 js파일입니다.
-✅todo make, save, delete
+✅todo 입력, 생성, 삭제
 */
 
 const todoContents = document.querySelector("#todoContents"); //영역(div)

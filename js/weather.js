@@ -1,5 +1,5 @@
 /*
-Geolocation , Weather APi관련 js파일입니다.
+✅Geolocation , Weather APi관련 js파일입니다.
 */
 const SO_API_KEY = "7c585f40f338335c110d02443dcdcc33";
 
