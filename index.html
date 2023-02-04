@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/apple-icon.png" />
-    <title>🍀MOMENTUM CloneCoding🍀</title>
+    <title>🍀SOYEON's MOMENTUM🍀</title>
     <!-- css reset -->
     <link
       rel="stylesheet"
@@ -13,11 +13,12 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/background.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/name.js"></script>
     <script defer src="./js/clock.js"></script>
     <script defer src="./js/todayFocus.js"></script>
     <script defer src="./js/quotes.js"></script>
     <script defer src="./js/todo.js"></script>
+    <script defer src="./js/weather.js"></script>
   </head>
   <body>
     <header>
@@ -26,8 +27,11 @@
         <span></span>
       </div>
       <div id="weather">
-        <span>weatherㅇㅇ</span>
-        <span>온도</span>
+        <div id="iconTemp">
+          <img src="" alt="icon" id="weatherIcon" />
+          <span></span>
+        </div>
+        <span id="weatherCity"></span>
       </div>
     </header>
     <section class="mainCenter">
@@ -45,7 +49,7 @@
               <span id="nameText" class="fs40_fw600">name</span>
             </span>
             <div class="nameBtnMenu">
-              <button id="nameModiBtn">📝</button>
+              <!-- <button id="nameModiBtn">📝</button> -->
               <button id="nameDelBtn">❌</button>
             </div>
           </div>
@@ -65,19 +69,10 @@
         <div id="todoContents">
           <div id="todoList">
             <p>📋 TO DO LIST</p>
-            <!-- <button id="todoAddBtn">➕</button> -->
             <form>
-              <input type="text" class="todoInput" placeholder="" required />
+              <input type="text" class="todoInput" placeholder="+" required />
             </form>
-            <ul id="list">
-              <!-- <li>
-                <div>
-                  <span></span>
-                  <span></span>
-                </div>
-                <button></button>
-              </li> -->
-            </ul>
+            <ul id="list"></ul>
           </div>
           <button id="listShowBtn">todo</button>
         </div>

@@ -17,11 +17,20 @@ const nameModiBtn = document.querySelector("#nameModiBtn");
 const nameDelBtn = document.querySelector("#nameDelBtn");
 
 const USERNAME_KEY = "userName";
+
+//이름 수정
+/*
+function modifyName() {
+  console.log("수정");
+}
+nameModiBtn.addEventListener("click", modifyName);
+*/
+
+//이름 삭제
 function deleteName() {
   localStorage.removeItem(USERNAME_KEY);
   isName();
 }
-
 nameDelBtn.addEventListener("click", deleteName);
 
 //메뉴show hidden

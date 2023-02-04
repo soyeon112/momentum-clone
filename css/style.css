@@ -63,8 +63,17 @@ header #weather span {
   padding: 3px 0;
 }
 header #quotesContents span:last-child,
-header #weather span:last-child {
+header #weather span {
   font-size: 12px;
+}
+header #weather #iconTemp img {
+  width: 35px;
+  height: 35px;
+  margin-top: 3px;
+}
+header #weather #iconTemp span:last-child {
+  font-size: 20px;
+  font-weight: 600;
 }
 .mainCenter {
   /* height: 600px; */
@@ -272,12 +281,16 @@ header #weather span:last-child {
   width: 95%;
   margin: 7px 0 15px 0;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 10px;
   background-color: transparent;
   border: none;
   border-bottom: solid 2px #7e7e7e;
-  color: #7e7e7e;
+  color: #333;
+}
+.todoInput::placeholder {
+  font-size: 18px;
+  color: rgba(126, 126, 126, 0.5);
 }
 .mainCenter #todoContents #todoList ul {
   width: 100%;
@@ -300,6 +313,7 @@ header #weather span:last-child {
 }
 .mainCenter #todoContents #todoList ul li div span:last-child {
   margin-left: 10px;
+  color: #252525;
 }
 .mainCenter #todoContents #todoList ul li button {
   /* margin-left: 3px; */
@@ -380,7 +394,7 @@ header #weather span:last-child {
     margin-top: 0px;
   }
   header #quotesContents span,
-  header #weather span {
+  header #weather #weatherText span {
     font-size: 10px;
     color: #fff;
     font-weight: 300;
