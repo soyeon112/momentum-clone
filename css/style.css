@@ -8,8 +8,10 @@ body {
 .fs40_fw600 {
   font-size: 40px;
   font-weight: 600;
+  font-family: "Manrope", sans-serif;
 }
-/* input type = text */
+
+/* 이름, focus입력창 공통 스타일 */
 .inputBox {
   text-align: center;
   width: 70%;
@@ -23,13 +25,15 @@ body {
   border-bottom: solid 3px #fff;
   color: #fff;
 }
-.inputBox:focus {
+
+.inputBox:focus,
+.todoInput:focus {
   outline: none;
 }
 
 /* 이름 입력창 - 초기화면 */
 header {
-  margin-top: 20px;
+  margin-top: 5px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -60,16 +64,17 @@ header #weather span {
 }
 header #quotesContents span:last-child,
 header #weather span:last-child {
-  font-family: "IBM Plex Sans KR", sans-serif;
   font-size: 12px;
 }
 .mainCenter {
-  height: 600px;
+  /* height: 600px; */
+  height: 90vh;
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 /* 중간 섹션 - 이름 입력창 */
 .mainCenter #inputName.none {
@@ -91,7 +96,7 @@ header #weather span:last-child {
 }
 .mainCenter #userTrue.active {
   display: block;
-  height: 100%;
+  /* height: 90vh; */
   padding-top: 80px;
   box-sizing: border-box;
 }
@@ -217,6 +222,115 @@ header #weather span:last-child {
   margin-right: 15px;
   cursor: pointer;
 }
+
+/* todoList */
+.mainCenter #todoContents {
+  position: absolute;
+  right: 7px;
+  bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.mainCenter #todoContents #todoList {
+  width: 250px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 13.5px;
+  font-weight: 400;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.mainCenter #todoContents #todoList.toggle {
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+.mainCenter #todoContents #todoList p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.mainCenter #todoContents #todoList #todoAddBtn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+.mainCenter #todoContents #todoList #todoAddBtn:hover {
+  cursor: pointer;
+  background-color: rgb(237, 231, 144);
+  text-align: center;
+}
+.mainCenter #todoContents #todoList form .todoInput {
+  text-align: center;
+  width: 95%;
+  margin: 7px 0 15px 0;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #7e7e7e;
+  color: #7e7e7e;
+}
+.mainCenter #todoContents #todoList ul {
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+}
+.mainCenter #todoContents #todoList ul li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.mainCenter #todoContents #todoList ul li div {
+  padding-top: 3px;
+}
+.mainCenter #todoContents #todoList ul li div span {
+  font-size: 14px;
+}
+.mainCenter #todoContents #todoList ul li div span:last-child {
+  margin-left: 10px;
+}
+.mainCenter #todoContents #todoList ul li button {
+  /* margin-left: 3px; */
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid#ccc;
+  border-radius: 3px;
+  width: 28px;
+  height: 22px;
+  font-size: 10px;
+}
+.mainCenter #todoContents #todoList ul li button:hover {
+  background-color: rgb(237, 231, 144);
+  cursor: pointer;
+}
+.mainCenter #todoContents #listShowBtn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: transparent; */
+  border: none;
+  border-radius: 50px;
+  /* color: #333; */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* -------------------------------------------------- */
+
 /* 반응형*/
 @media (max-width: 500px) {
   /* 이름입력창 반응형 */

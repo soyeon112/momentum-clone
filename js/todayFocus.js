@@ -29,7 +29,7 @@ function makeFocusItem(todayFocus) {
   li.appendChild(span);
   focusListUl.appendChild(li);
 }
-
+//아이템 입력
 function submitFocus(event) {
   event.preventDefault();
   const todayFocus = inputTodayFocus.value;
@@ -41,6 +41,7 @@ function submitFocus(event) {
 focusForm.addEventListener("submit", submitFocus);
 
 //로컬스토리지에 todayFocus있는지 확인
+//이미 스토리지에 있으면 그 값 불러오고, 없으면 입력창 나타남.
 function isTodayFocus() {
   const todayFocus = localStorage.getItem("todayFocus");
   console.log(todayFocus, typeof todayFocus);
