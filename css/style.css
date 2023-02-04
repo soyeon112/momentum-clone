@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500;600&display=swap");
-body {
-  font-family: "IBM Plex Sans KR", sans-serif;
-}
-/* 공통 */
+
+/* ✅ 공통 */
 /* font size 40px ,weight 600 */
 .fs40_fw600 {
   font-size: 40px;
@@ -11,7 +9,7 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-/* 이름, focus입력창 공통 스타일 */
+/* ✅ 이름, focus입력창 공통 스타일 */
 .inputBox {
   text-align: center;
   width: 70%;
@@ -25,25 +23,29 @@ body {
   border-bottom: solid 3px #fff;
   color: #fff;
 }
-
 .inputBox:focus,
 .todoInput:focus {
   outline: none;
 }
 
-/* 이름 입력창 - 초기화면 */
+/* ✅바디  */
+body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+/* ✅헤더  */
 header {
   margin-top: 5px;
+  height: auto;
   width: 100%;
   text-align: center;
   display: flex;
-  text-align: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 0 20px;
   box-sizing: border-box;
-  align-items: center;
+  align-items: baseline;
 }
-/*-- 명언--*/
+/*✅ 명언*/
 header #quotesContents,
 header #weather {
   height: 50px;
@@ -76,7 +78,7 @@ header #weather #iconTemp span:last-child {
   font-weight: 600;
 }
 .mainCenter {
-  /* height: 600px; */
+  /* height: 100%; */
   height: 90vh;
   width: 100%;
   align-items: center;
@@ -85,7 +87,7 @@ header #weather #iconTemp span:last-child {
   justify-content: center;
   position: relative;
 }
-/* 중간 섹션 - 이름 입력창 */
+/* ✅ 초기화면 - 이름 입력창 */
 .mainCenter #inputName.none {
   display: none;
 }
@@ -99,7 +101,7 @@ header #weather #iconTemp span:last-child {
   color: #fff;
 }
 
-/* 중간 섹션 - 시계 */
+/* ✅ 시간 영역 - 시계, 시간별 문구 출력 */
 .mainCenter #userTrue {
   display: none;
 }
@@ -112,10 +114,6 @@ header #weather #iconTemp span:last-child {
 .mainCenter .clock_intro {
   text-align: center;
   height: 270px;
-  /* display: none; */
-}
-.mainCenter .clock_intro {
-  /* display: block; */
 }
 .clockIcon {
   font-size: 35px;
@@ -168,14 +166,12 @@ header #weather #iconTemp span:last-child {
   background-color: rgb(237, 231, 144);
 }
 
-/* --오늘제일 중요한일 today focus-- */
+/* ✅ Today Focus */
 .mainCenter #fouseContents {
   position: relative;
   height: 150px;
 }
 .mainCenter .focusForm {
-  /* display: block; */
-
   height: 150px;
   margin-top: 10px;
   display: flex;
@@ -232,7 +228,7 @@ header #weather #iconTemp span:last-child {
   cursor: pointer;
 }
 
-/* todoList */
+/* ✅ todoList */
 .mainCenter #todoContents {
   position: absolute;
   right: 7px;
@@ -264,7 +260,6 @@ header #weather #iconTemp span:last-child {
   font-weight: 600;
   margin-bottom: 20px;
 }
-
 .mainCenter #todoContents #todoList #todoAddBtn {
   width: 35px;
   height: 35px;
@@ -332,15 +327,14 @@ header #weather #iconTemp span:last-child {
   width: 50px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: transparent; */
   border: none;
   border-radius: 50px;
-  /* color: #333; */
   color: #fff;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   align-self: flex-end;
+  text-align: center;
 }
 
 /* -------------------------------------------------- */
@@ -366,7 +360,7 @@ header #weather #iconTemp span:last-child {
   }
   .mainCenter .clock_intro .introText span {
     /* background-color: pink; */
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .mainCenter .clock_intro .introText span #timeText {
     font-size: 20px;
@@ -394,11 +388,20 @@ header #weather #iconTemp span:last-child {
     margin-top: 0px;
   }
   header #quotesContents span,
-  header #weather #weatherText span {
-    font-size: 10px;
+  header #weather #weatherCity {
+    font-size: 11px;
     color: #fff;
     font-weight: 300;
     padding: 2px 0;
+  }
+  header #weather #iconTemp img {
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+  }
+  header #weather #iconTemp span:last-child {
+    font-size: 15px;
+    font-weight: 600;
   }
   .mainCenter #fouseContents .focusList span {
     color: #fff;

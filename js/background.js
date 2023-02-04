@@ -18,4 +18,4 @@ const img = imgs[Math.floor(Math.random() * imgs.length)];
 body.style.background = `url(./img/${img})`;
 body.style.backgroundPosition = "center";
 body.style.backgroundRepeat = "no-repeat";
-body.style.backgroundSize = "cover";
+// body.style.backgroundSize = "cover";

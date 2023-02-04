@@ -23,15 +23,15 @@
   <body>
     <header>
       <div id="quotesContents">
-        <span></span>
-        <span></span>
+        <span><!--명언(영문)--></span>
+        <span><!--명언(한글)--></span>
       </div>
       <div id="weather">
         <div id="iconTemp">
           <img src="" alt="icon" id="weatherIcon" />
-          <span></span>
+          <span><!--현재기온--></span>
         </div>
-        <span id="weatherCity"></span>
+        <span id="weatherCity"><!--도시명--></span>
       </div>
     </header>
     <section class="mainCenter">
@@ -42,11 +42,11 @@
       <div id="userTrue">
         <div class="clock_intro">
           <span class="clockIcon">⏰</span>
-          <h1 id="clock"></h1>
+          <h1 id="clock"><!--현재시간--></h1>
           <div class="introText">
             <span>
-              <span id="timeText" class="fs40_fw600">timeText</span>
-              <span id="nameText" class="fs40_fw600">name</span>
+              <span id="timeText" class="fs40_fw600"><!-- 시간별문구 --></span>
+              <span id="nameText" class="fs40_fw600"><!-- 유저네임 --></span>
             </span>
             <div class="nameBtnMenu">
               <!-- <button id="nameModiBtn">📝</button> -->
@@ -63,7 +63,9 @@
           </form>
           <div class="focusList">
             <span>TODAY</span>
-            <ul></ul>
+            <ul>
+              <!-- focus item 생성 -->
+            </ul>
           </div>
         </div>
         <div id="todoContents">
@@ -72,7 +74,9 @@
             <form>
               <input type="text" class="todoInput" placeholder="+" required />
             </form>
-            <ul id="list"></ul>
+            <ul id="list">
+              <!-- doto item 생성 -->
+            </ul>
           </div>
           <button id="listShowBtn">todo</button>
         </div>
