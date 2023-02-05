@@ -342,6 +342,17 @@ header #weather #iconTemp span:last-child {
   text-align: center;
 }
 
+/*✅ 제작자 표시 - 소연*/
+.mainCenter #soyeonIcon {
+  position: absolute;
+  left: 7px;
+  bottom: 3px;
+}
+.mainCenter #soyeonIcon > img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+}
 /* -------------------------------------------------- */
 
 /* 반응형*/
@@ -437,5 +448,10 @@ header #weather #iconTemp span:last-child {
   }
   .mainCenter #todoContents #todoList ul {
     height: 150px;
+  }
+  /*✅ 헤더> 제작자 표시 - 소연*/
+  .mainCenter #soyeonIcon > img {
+    width: 20px;
+    height: 20px;
   }
 }

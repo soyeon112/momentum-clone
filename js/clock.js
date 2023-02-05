@@ -29,13 +29,14 @@ setInterval(getTime, 60000); //1분에 1번씩 호출되게
 
 //시간별 문구 출력
 function setTimeText(hours) {
+  hours = 3;
   if (6 <= hours && hours < 12) {
     timeText.innerText = timeTexts["morning"];
   } else if (12 <= hours && hours < 18) {
     timeText.innerText = timeTexts["afternoon"];
   } else if (18 <= hours && hours < 24) {
     timeText.innerText = timeTexts["evening"];
-  } else if (24 <= hours && hours < 6) {
+  } else if (24 <= hours || hours < 6) {
     timeText.innerText = timeTexts["dawn"];
   }
 }
